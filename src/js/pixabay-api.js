@@ -17,7 +17,11 @@ const axios = Axios.create({
 
 export function getImagesByQuery(query) {
     return axios
-        .get('')
+        .get('', {
+            params: {
+                q: query,
+            }
+        })
         .then(response => response.data)
 }
 

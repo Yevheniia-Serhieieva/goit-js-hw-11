@@ -19,10 +19,10 @@ export function createGallery(images) {
             alt="${image.tags}"
             />
             <div class = "gallery-box">
-            <p class="gallery-box-text">Likes "${image.likes}"</p>
-            <p class="gallery-box-text">Views "${image.views}"</p>
-            <p class="gallery-box-text">Comments "${image.comments}"</p>
-            <p class="gallery-box-text">Downloads "${image.downloads}"</p>
+            <p class="gallery-box-text">Likes <span class="gallery-box-span">${image.likes}</span></p>
+            <p class="gallery-box-text">Views <span class="gallery-box-span">${image.views}</span></p>
+            <p class="gallery-box-text">Comments <span class="gallery-box-span">${image.comments}</span></p>
+            <p class="gallery-box-text">Downloads <span class="gallery-box-span">${image.downloads}</span></p>
             </div>
             </a>
             </li>`
