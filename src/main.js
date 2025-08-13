@@ -12,7 +12,11 @@ formElem.addEventListener('submit', async e => {
 
     const query = e.target.elements.searchText.value.trim();
 
-    if(query === '' || query === ' ') {
+    if(query === '') {
+        iziToast.warning({
+            title: 'Warning',
+            message: 'Empty input field',
+        });
         return;
     };
 

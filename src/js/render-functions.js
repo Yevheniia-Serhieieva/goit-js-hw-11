@@ -40,9 +40,9 @@ export function clearGallery() {
 }
 
 export function showLoader() {
-    document.querySelector('.loader').classList.add('is-hidden');
+    document.querySelector('.loader').classList.remove('is-hidden');
 }
 
 export function hideLoader() {
-    document.querySelector('.loader').classList.remove('is-hidden');
+    document.querySelector('.loader').classList.add('is-hidden');
 }
