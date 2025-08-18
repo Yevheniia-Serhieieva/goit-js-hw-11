@@ -1,7 +1,5 @@
 import Axios from "axios";
 
-
-
 const axios = Axios.create({
     baseURL: 'https://pixabay.com/api/',
     params: {
@@ -11,7 +9,6 @@ const axios = Axios.create({
         safesearch: true,
     },
 });
-
 
 export async function getImagesByQuery(query, page, per_page = 15) {
     const response = await axios.get('', {
