@@ -41,8 +41,6 @@ formElem.addEventListener('submit', async e => {
     } finally {
         hideLoader();
     }
-
-    
 });
 
 
