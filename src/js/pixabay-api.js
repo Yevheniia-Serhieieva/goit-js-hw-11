@@ -1,7 +1,4 @@
-
 import Axios from "axios";
-
-
 
 const axios = Axios.create({
     baseURL: 'https://pixabay.com/api/',
@@ -13,15 +10,13 @@ const axios = Axios.create({
     },
 });
 
-
-export function getImagesByQuery(query) {
-    return axios
-        .get('', {
-            params: {
-                q: query,
-            }
-        })
-        .then(response => response.data)
+export async function getImagesByQuery(query, page, per_page = 15) {
+    const response = await axios.get('', {
+        params: {
+            q: query,
+            page: page,
+            per_page: per_page,
+        }
+    });
+    return response.data;
 }
-
-
