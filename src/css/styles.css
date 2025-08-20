@@ -73,11 +73,6 @@ a {
   color: #fff;
 }
 
-.btn-load {
-  display: block;
-  margin: 32px auto 44px;
-}
-
 .btn:hover, .btn:focus {
   background-color: #6c8cff;
 }
